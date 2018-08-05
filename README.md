@@ -1,5 +1,11 @@
 ### Sensu Handlers
-Python Sensu Handlers
+
+Custom handlers for [Sensu](https://sensu.io/).
+
+These will take an event from Sensu from standard input, and process it, sending it out via Email or Slack, or sending it to InfluxDB.
+
+Email sending has a configurable contacts list (A YAML file). See the example provided.
+This will send email based on alert name, hostname or group.
 
 
 ### Notes
