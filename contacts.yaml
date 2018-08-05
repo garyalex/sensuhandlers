@@ -1,0 +1,16 @@
+# This user will get all alerts
+- user: bob
+  email: bob@example.com
+  tags:
+    - all
+
+# This user will get all alerts for:
+# hostname (everything on that host)
+# alertname (all alerts that match this name)
+# groupname (all alerts for hosts in this group eg production)
+- user: jane
+  email: jane@example.com
+  tags:
+    - hostname
+    - alertname
+    - groupname
